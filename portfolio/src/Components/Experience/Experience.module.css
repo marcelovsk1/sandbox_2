@@ -133,9 +133,14 @@
 
   .content {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column; /* Altera a direção para uma coluna */
   }
+
+  .skills,
+  .history {
+    width: 100%; /* Garante que os elementos ocupem toda a largura do contêiner */
+  }
+
 
   .skills {
     display: grid;
@@ -143,7 +148,7 @@
     gap: 5px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-left: -28vh;
+    margin-left: -8vh;
   }
 
   .skill {
@@ -165,8 +170,8 @@
   }
 
   .skillImageContainer img {
-    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 40px;
+    height: 40px;
   }
 
   .skills p {
@@ -176,10 +181,8 @@
   .history {
     display: flex;
     flex-direction: row;
-    width: 45%;
-    height: 45%;
-    gap: 40px;
-    margin-right: 78vh;
+    align-items: center;
+    margin-left: -15vh;
   }
 
   .historyItem {
