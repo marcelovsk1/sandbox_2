@@ -1,4 +1,3 @@
-
 .container {
   color: var(--color-text);
   margin-top: 99px;
@@ -6,7 +5,6 @@
   margin-right: 10%;
   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
   /* border-radius: 3%; */
-
 }
 
 .title {
@@ -135,37 +133,35 @@
 
   .content {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
   }
 
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  .skills,
+  .history {
+    width: 100%;
   }
 
   .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: 30vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: -9vh;
   }
 
   .skill {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha os itens horizontalmente */
+    align-items: center;
     margin-bottom: 10px;
   }
 
   .skillImageContainer {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20%;
-    width: 60px; /* Ajuste o tamanho do contêiner da imagem conforme necessário */
-    height: 60px; /* Ajuste o tamanho do contêiner da imagem conforme necessário */
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,8 +169,8 @@
   }
 
   .skillImageContainer img {
-    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 40px;
+    height: 40px;
   }
 
   .skills p {
@@ -184,10 +180,8 @@
   .history {
     display: flex;
     flex-direction: row;
-    width: 45%;
-    height: 45%;
-    gap: 40px;
-    margin-right: 38vh;
+    align-items: center;
+    margin-left: -15vh;
   }
 
   .historyItem {
@@ -225,6 +219,5 @@
     /* list-style-type: circle; */
 
   }
-
 
 }
