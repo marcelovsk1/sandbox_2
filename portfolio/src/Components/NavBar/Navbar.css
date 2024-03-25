@@ -79,34 +79,19 @@
   cursor: pointer;
 }
 
+#mobile-menu-icon {
+  display: none;
+}
 
-
-
+.mobile-menu {
+  display: none;
+}
 
 
 @media screen and (max-width: 600px) {
 
-  #burger {
+  #mobile-menu-icon {
     display: block;
-    color: var(--black);
-    text-align: center;
-    padding: 10px;
-    background-color: #007AFF;
-  }
-
-  #burger:hover {
-    color: var(--blueCard);
-    cursor: pointer;
-  }
-
-  .menu-items {
-    display: none;
-    position: absolute;
-    top: 50px; /* ajuste conforme necessário */
-    right: 10px; /* ajuste conforme necessário */
-    background-color: #ffffff; /* cor de fundo do menu */
-    border: 1px solid #ccc; /* borda do menu */
-    padding: 10px; /* espaçamento interno */
   }
 
   .n-right.active .menu-items {
@@ -140,11 +125,4 @@
     display: none; /* Oculta a lista de navegação em telas menores que 600px */
   }
 
-  .hamburger-menu {
-    display: flex; /* Exibe o ícone do hambúrguer em telas menores que 600px */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 20px;
-  }
 }
