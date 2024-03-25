@@ -99,7 +99,7 @@
     cursor: pointer;
     width: 30%;
     margin-left: 25vh;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -10vh;
   }
 
   .mobile-menu {
@@ -108,7 +108,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 100%; /* Cobrindo toda a largura da página */
+    width: 70%; /* Cobrindo toda a largura da página */
     height: 100%; /* Cobrindo toda a altura da página */
     background-color: var(--blueCard);
     padding: 1rem;
@@ -119,11 +119,14 @@
   .mobile-menu ul {
     list-style-type: none;
     padding: 0;
+    padding-top: 25vh;
+    color: #ef3c36;
   }
 
   .mobile-menu li {
     padding: 1rem 0;
     text-align: center;
+    padding-top: 5vh;
   }
 
   .open {
