@@ -79,11 +79,46 @@
   cursor: pointer;
 }
 
-#burger {
-  color: var(--black);
-}
+
+
+
+
 
 @media screen and (max-width: 600px) {
+
+  #burger {
+    display: block;
+    color: var(--black);
+    text-align: center;
+    padding: 10px;
+    background-color: #007AFF;
+  }
+
+  #burger:hover {
+    color: var(--blueCard);
+    cursor: pointer;
+  }
+
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 50px; /* ajuste conforme necessário */
+    right: 10px; /* ajuste conforme necessário */
+    background-color: #ffffff; /* cor de fundo do menu */
+    border: 1px solid #ccc; /* borda do menu */
+    padding: 10px; /* espaçamento interno */
+  }
+
+  .n-right.active .menu-items {
+    display: block;
+  }
+
+  .close-btn {
+    cursor: pointer;
+    color: #ff0000; /* cor do botão de fechar */
+    float: right; /* alinhar o botão à direita */
+  }
+
   .n-left, .n-right {
     flex: 1;
     justify-content: center;
@@ -96,7 +131,7 @@
   }
 
   .name {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: left;
   }
