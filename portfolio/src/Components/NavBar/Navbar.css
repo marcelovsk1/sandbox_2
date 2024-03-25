@@ -92,7 +92,44 @@
 
   #mobile-menu-icon {
     display: block;
+    font-size: 44px;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 25vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Cobrindo toda a largura da página */
+    height: 100%; /* Cobrindo toda a altura da página */
+    background-color: var(--blueCard);
+    padding: 1rem;
+    overflow-y: auto; /* Adicionando rolagem vertical se o conteúdo for muito longo */
+    z-index: 999; /* Definindo uma ordem de empilhamento alta para sobrepor outros elementos */
+  }
+
+  .mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .mobile-menu li {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .open {
+    display: block;
+  }
+
 
   .n-right.active .menu-items {
     display: block;
