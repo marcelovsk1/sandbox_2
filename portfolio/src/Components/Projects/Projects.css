@@ -85,14 +85,17 @@
   margin-bottom: 16px;
 }
 
+.proj-txtx {
+  text-align: center;
+}
+
 .proj-txtx span {
   font-weight: 500;
-  font-size: 2.3vh;
-  text-align: center;
+  font-size: 1vh;
   letter-spacing: 1px;
-  margin-right: 10px;
-  margin: 20px;
+  margin: 20px auto; /* Centraliza verticalmente e define margens automáticas horizontalmente */
 }
+
 
 .box-rumble-img {
   width: 200px;
