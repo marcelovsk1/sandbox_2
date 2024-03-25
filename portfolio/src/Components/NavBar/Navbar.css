@@ -79,29 +79,8 @@
   cursor: pointer;
 }
 
-/* Estilos para o ícone do hambúrguer */
-.hamburger-menu {
-  cursor: pointer;
-  display: none; /* Inicialmente oculto em telas maiores que 600px */
-}
-
-.hamburger-menu.active .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(3px, 3px);
-}
-
-.hamburger-menu.active .hamburger-line:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-menu.active .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(3px, -3px);
-}
-
-.hamburger-line {
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  transition: transform 0.3s, opacity 0.3s;
+#burger {
+  color: var(--black);
 }
 
 @media screen and (max-width: 600px) {

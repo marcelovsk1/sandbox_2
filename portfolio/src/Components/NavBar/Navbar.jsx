@@ -24,6 +24,9 @@ const Navbar = () => {
       </div>
       <div className={`n-right ${showMenu ? 'active' : ''}`}>
         <div className="n-list">
+        <span id="burger" class="material-symbols-outlined">
+          menu
+        </span>
           <ul style={{listStyleType: 'none'}}>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
