@@ -114,6 +114,7 @@
     padding: 1rem;
     overflow-y: auto; /* Adicionando rolagem vertical se o conteúdo for muito longo */
     z-index: 999; /* Definindo uma ordem de empilhamento alta para sobrepor outros elementos */
+    text-decoration: none;
   }
 
   .mobile-menu ul {
@@ -121,12 +122,30 @@
     padding: 0;
     padding-top: 25vh;
     color: #ef3c36;
+    text-decoration: none;
   }
 
   .mobile-menu li {
     padding: 1rem 0;
     text-align: center;
     padding-top: 5vh;
+  }
+
+  .mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+
+
+  .mobile-menu-open {
+    display: block;
+    font-size: 54px;
+  }
+
+  ul {
+    text-decoration: none;
   }
 
   .open {
