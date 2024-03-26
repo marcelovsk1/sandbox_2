@@ -103,18 +103,26 @@
   }
 
   .mobile-menu {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 70%; /* Cobrindo toda a largura da página */
-    height: 100%; /* Cobrindo toda a altura da página */
+    width: 70%;
+    height: 100%;
     background-color: var(--blueCard);
     padding: 1rem;
-    overflow-y: auto; /* Adicionando rolagem vertical se o conteúdo for muito longo */
-    z-index: 999; /* Definindo uma ordem de empilhamento alta para sobrepor outros elementos */
+    overflow-y: auto;
+    z-index: 999;
     text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
   }
 
   .mobile-menu ul {
@@ -137,7 +145,9 @@
     font-size: 24px;
   }
 
-
+  .material-symbols-outlined {
+    font-size: 44px;
+  }
 
   .mobile-menu-open {
     display: block;
@@ -159,8 +169,8 @@
 
   .close-btn {
     cursor: pointer;
-    color: #ff0000; /* cor do botão de fechar */
-    float: right; /* alinhar o botão à direita */
+    color: #ff0000;
+    float: right;
   }
 
   .n-left, .n-right {
@@ -181,7 +191,6 @@
   }
 
   .n-list {
-    display: none; /* Oculta a lista de navegação em telas menores que 600px */
+    display: none;
   }
-
 }

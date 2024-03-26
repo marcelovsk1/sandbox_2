@@ -4,6 +4,13 @@ import github from '../../img/github_icon.png'
 import linkedin from '../../img/linkedin _icon.png'
 import avatar from '../../img/avatar12.png';
 
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Intro = () => {
   return (
     <div className="intro">
@@ -15,7 +22,8 @@ const Intro = () => {
         </div>
         <div className="i-buttons-container">
           <button className="button i-button">Download CV</button>
-          <button className="button-secondary i-button">Contact Info</button>
+          {/* Usando a função scrollToContact para rolar até a seção de contato */}
+          <button className="button-secondary i-button" onClick={scrollToContact}>Contact Info</button>
         </div>
         <div className="i-icons">
           <a href='https://github.com/marcelovsk1' className='i-icons'>
